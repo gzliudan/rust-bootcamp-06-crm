@@ -1,3 +1,8 @@
+pub mod pb {
+    include!(concat!(env!("OUT_DIR"), "/crm.rs"));
+}
+
 fn main() {
-    println!("Hello, world!");
+    let user = pb::User::default();
+    println!("User: {:?}", user);
 }
