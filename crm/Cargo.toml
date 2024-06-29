@@ -8,6 +8,14 @@ description = "A template for Rust projects."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
 [dependencies]
 anyhow = { workspace = true }
 prost = { workspace = true }
